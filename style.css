@@ -1,0 +1,164 @@
+:root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --light: #eee;
+    --pink: #000000;
+    --purple: #f6f45c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'fira sans' sans-serif;
+}
+body{
+    background-color:var(--purple)
+}
+
+h1 {
+    color: azure;
+}
+
+h1 {
+    font-family: 'cursive'; 
+    font-weight: bold;
+    font-style: italic;
+    color: var(--pink);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+
+    
+    animation: pulse 2s infinite;
+}
+
+
+.task-list-container {
+    width: 100%;
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.task-list-app {
+ border: solid 1px var(--pink);
+background-color: #eee;
+ padding: 24px;
+ width: 650px;
+ height: 600px;
+ font-size: italic;
+   
+}
+.title  {
+    width: 100%;
+    display: flex;
+    font-style: italic;
+    color: var(--pink);
+}
+.form {
+width: 100%;
+display: flex;
+gap: 12px;
+}
+.form input {
+    width: 100%;
+    outline: none;
+    padding: 12px;
+}
+.form  button {
+    width: 100px;
+    outline: none;
+    border: none;
+    background-color:var(--purple)
+ 
+
+ 
+}
+.todos-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top:12px;
+}
+.todo {
+    width: 100%;
+    border: solid 1px black;
+    padding:12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.todo-text {
+    flex: 1;
+}
+.todo-button{
+    padding:6px;
+ background-color: azure;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ border-radius: 20%;
+ cursor: pointer;
+ border: none;
+}
+
+
+.todo-button:hover {
+    background: linear-gradient(to right, #bda427, #000000);
+    /* Fallback for older browsers */
+    background: -webkit-linear-gradient(to right, #b527bd, #7750a3);
+}
+
+.todo-button:active {
+    background: linear-gradient(to right, #83a11f, #7d9342);
+    /* Fallback for older browsers */
+    background: -webkit-linear-gradient(to right, #92a11f, #8f9342);
+}
+.form button:hover {
+    background: linear-gradient(to right, #aebd27, #7ea350);
+    /* Fallback for older browsers */
+    background: -webkit-linear-gradient(to right, #8dbd27, #94a350);
+}
+
+.form button:active {
+    background: linear-gradient(to right, #274609, #7f9342);
+    /* Fallback for older browsers */
+    background: -webkit-linear-gradient(to right, #1fa13b, #849342);
+}
+
+body {
+    background-image: url(./Media,1512299,smxx.jpg); 
+    background-size: cover; 
+    background-position: center;
+    animation: backgroundAnimation 4s forwards linear; 
+
+}
+
+@keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
